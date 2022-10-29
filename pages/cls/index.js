@@ -1,9 +1,13 @@
 import styled from '@emotion/styled';
+import {ContentContainer} from "../../src/styles/Layout.Styled";
+import Definition from "../../src/views/components/CoreWebVitals/CLS/Definition";
 
 const CLS = () => {
     return (
         <Container>
-            CLS
+            <ContentContainer>
+                <Definition/>
+            </ContentContainer>
         </Container>
     )
 }
