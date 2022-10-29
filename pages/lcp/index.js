@@ -1,10 +1,13 @@
 import styled from '@emotion/styled';
-import AboutLCP from "../../src/views/components/CoreWebVitals/LCP";
+import Definition from "../../src/views/components/CoreWebVitals/LCP/Definition";
+import {ContentContainer} from "../../src/styles/Layout.Styled";
 
 const LCP = () => {
     return (
         <Container>
-            <AboutLCP/>
+            <ContentContainer>
+                <Definition/>
+            </ContentContainer>
         </Container>
     )
 }
