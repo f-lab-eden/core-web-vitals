@@ -18,8 +18,12 @@ const Desc = () => {
                 메트릭이란? 성능은 상대적일 수 있다.
                 왜냐하면 동일한 사이트이더라도 빠른 네트워크를 사용하는 사용자에게는 빠르고, 느린 네트워크를 사용하는 사용자에게는 느리게 동작할 수 있기 때문이다.
                 따라서, 이러한 상대성을 줄이고 정확하고 정량적이며 객관적인 기준에서 성능을 비교할 수 있어야하는데 이러한 객관적인 기준을 ‘메트릭’이라고 한다.</span>
+
+            <p>위 세가지 메트릭이 모두 75번째 백분위수인지를 기준으로 권장 목표에 도달했는지 확인한다.</p>
             <p>
-                <Link href={'https://search.google.com/search-console/core-web-vitals?resource_id=sc-domain%3Af-lab.kr&hl=ko'} target={'_blank'}>
+                <Link
+                    href={'https://search.google.com/search-console/core-web-vitals?resource_id=sc-domain%3Af-lab.kr&hl=ko'}
+                    target={'_blank'}>
                     우리 프로덕트의 코어 웹 바이탈은 여기에서 확인하실 수 있어요!
                 </Link>
             </p>
@@ -36,23 +40,18 @@ const Container = styled.div`
   }
 
   span {
-    font-size: 14px;
+    font-size: 12px;
   }
-  
-  
+
+
   a {
-    display: flex;
-    justify-content: center;
     color: #3884c7;
+
     &:hover {
       text-decoration: underline;
     }
   }
-  
-  strong {
-    color: #3884c7;
-  }
-  
+
 `;
 
 export default Desc;

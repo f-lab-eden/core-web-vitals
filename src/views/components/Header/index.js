@@ -1,13 +1,17 @@
 import styled from '@emotion/styled';
+import Link from 'next/link';
 import Image from 'next/image';
 import {ContentContainer} from "../../../styles/Layout.Styled";
 
 const Header = () => {
     return (
         <Wrapper>
-            <Logo>
-                <Image src={'/images/logo.svg'} width={60} height={60}/>
-            </Logo>
+            <Link href={'/'}>
+                <Logo>
+                    <Image src={'/images/logo.svg'} width={60} height={60} alt={'f-lab-logo'}/>
+                </Logo>
+            </Link>
+
             <Title>
                 월간 에프랩 11월호: 이든의 코어 웹 바이탈
             </Title>

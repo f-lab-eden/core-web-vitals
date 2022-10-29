@@ -12,7 +12,7 @@ const CoreWebVitals = () => {
 }
 
 const Container = styled.div`
-  padding: 60px 0;
+  padding-top: 60px;
 
 `;
 export default CoreWebVitals;

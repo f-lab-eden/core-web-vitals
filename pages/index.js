@@ -1,20 +1,7 @@
-import styled from "@emotion/styled";
-import Navigation from "../src/views/components/Navigation";
-import CoreWebVitals from "../src/views/components/CoreWebVitals";
-import {ContentContainer} from "../src/styles/Layout.Styled";
+import Intro from "../src/views/components/Intro";
 
-export default function Home() {
-    return (
-        <Container>
-            <ContentContainer>
-                <CoreWebVitals/>
-                <Navigation/>
-            </ContentContainer>
-        </Container>
-
-    )
+export default function IntroPage() {
+    return <Intro/>
 }
 
-const Container = styled.div`
-  height: 100vh;
-`;
+

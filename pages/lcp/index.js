@@ -1,5 +1,5 @@
 import styled from '@emotion/styled';
-import AboutLCP from "../src/views/components/CoreWebVitals/LCP";
+import AboutLCP from "../../src/views/components/CoreWebVitals/LCP";
 
 const LCP = () => {
     return (

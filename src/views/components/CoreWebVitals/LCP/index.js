@@ -8,7 +8,6 @@ const AboutLCP = () => {
         <Container>
             <ContentContainer>
                 <Definition/>
-                <Optimization/>
             </ContentContainer>
         </Container>
     )
