@@ -1,8 +1,8 @@
 import styled from '@emotion/styled';
-import Optimization from "../../src/views/components/CoreWebVitals/LCP/Optimization";
 import {ContentContainer} from "../../src/styles/Layout.Styled";
+import Optimization from "../../src/views/components/CoreWebVitals/FID/Optimization";
 
-const LCPOptimization = () => {
+const FIDOptimization = () => {
     return (
         <Container>
             <ContentContainer>
@@ -15,4 +15,4 @@ const LCPOptimization = () => {
 const Container = styled.div`
 
 `;
-export default LCPOptimization;
+export default FIDOptimization;

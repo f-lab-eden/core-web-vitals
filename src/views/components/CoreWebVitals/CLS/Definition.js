@@ -1,9 +1,9 @@
 import styled from '@emotion/styled';
 
-const FID = () => {
+const Definition = () => {
     return (
         <Container>
-            FID
+            Definition
         </Container>
     )
 }
@@ -11,4 +11,4 @@ const FID = () => {
 const Container = styled.div`
 
 `;
-export default FID;
+export default Definition;

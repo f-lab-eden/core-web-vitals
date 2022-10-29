@@ -25,6 +25,10 @@ const Footer = () => {
 }
 
 const Wrapper = styled(ContentContainer)`
+  //position: absolute;
+  //bottom: 0;
+  //left: 0;
+  //width: 100%;
   padding: 20px 0;
   border-top: 1px solid #d1d1d1;
   

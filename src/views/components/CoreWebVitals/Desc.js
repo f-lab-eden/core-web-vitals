@@ -1,5 +1,6 @@
 import styled from '@emotion/styled';
 import Link from 'next/link'
+import Image from 'next/image'
 
 const Desc = () => {
     return (
@@ -21,12 +22,61 @@ const Desc = () => {
 
             <p>위 세가지 메트릭이 모두 75번째 백분위수인지를 기준으로 권장 목표에 도달했는지 확인한다.</p>
             <p>
+                코어 웹 바이탈을 측정할 수 있는 도구는 아래와 같다.
+            </p>
+            <p><strong>Lighthouse</strong></p>
+            <div>
+                <Image src={'/images/lighthouse.png'} width={500} height={700} alt={'lighthouse'}/>
+            </div>
+            <br/>
+            <br/>
+            <br/>
+            <p><strong><Link href={'https://pagespeed.web.dev/'} target={'_blank'}>PageSpeedInsights</Link></strong></p>
+            <div>
+                <Image src={'/images/page-speed-insights.png'} width={1000} height={400} alt={'page-speed-insights'}/>
+            </div>
+            <br/>
+            <br/>
+            <br/>
+            <p><strong>Chrome DevTools</strong></p>
+            <div>
+                <Image src={'/images/chrome-devtools.png'} width={500} height={700} alt={'dev-tools'}/>
+            </div>
+            <br/>
+            <br/>
+            <br/>
+            <p><strong>Web Vitals 익스텐션</strong></p>
+            <div>
+                <Image src={'/images/web-vitals-extension.png'} width={1000} height={400} alt={'web-vitals-extension'}/>
+            </div>
+            <br/>
+            <br/>
+            <br/>
+            <p><strong><Link
+                href={'https://search.google.com/search-console/core-web-vitals?resource_id=sc-domain%3Af-lab.kr&hl=ko'}
+                target={'_blank'}>
+                Search Console
+            </Link></strong></p>
+            <div>
+                <Image src={'/images/search-console.png'} width={1000} height={400} alt={'search-console'}/>
+            </div>
+            <br/>
+            <br/>
+            <br/>
+            <p><strong><Link href={'https://web.dev/measure/'} target={'_blank'}>web.dev</Link></strong></p>
+            <br/>
+            <br/>
+            <br/>
+            <p>
                 <Link
                     href={'https://search.google.com/search-console/core-web-vitals?resource_id=sc-domain%3Af-lab.kr&hl=ko'}
                     target={'_blank'}>
                     우리 프로덕트의 코어 웹 바이탈은 여기에서 확인하실 수 있어요!
                 </Link>
             </p>
+            <br/>
+            <br/>
+            <br/>
         </Container>
     )
 }
@@ -52,6 +102,10 @@ const Container = styled.div`
     }
   }
 
+`;
+
+const Box = styled.div`
+  height: 100vh;
 `;
 
 export default Desc;
