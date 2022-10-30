@@ -1,9 +1,13 @@
 import styled from '@emotion/styled';
+import {ContentContainer} from "../../src/styles/Layout.Styled";
+import Optimization from "../../src/views/components/CoreWebVitals/CLS/Optimization";
 
-const Optimization = () => {
+const CLSOptimization = () => {
     return (
         <Container>
-            Optimization
+            <ContentContainer>
+                <Optimization/>
+            </ContentContainer>
         </Container>
     )
 }
@@ -11,4 +15,4 @@ const Optimization = () => {
 const Container = styled.div`
 
 `;
-export default Optimization;
+export default CLSOptimization;

@@ -1,6 +1,7 @@
 import styled from '@emotion/styled';
 import Image from "next/image";
 import Link from 'next/link'
+import NextButton from "../../Buttons/NextButton";
 
 const Definition = () => {
     return (
@@ -12,11 +13,16 @@ const Definition = () => {
             <p>CLS(Cumulative Layout Shift, 누적 레이아웃 이동)은 뷰포트 내에서 예기치 않은 레이아웃 이동에 대한 점수를 의미한다.</p>
             <p>웹 사이트를 이용하면서 보고있던 글자가 반짝거리거나, 보이지 않았던 이미지나 비디오, 광고 등이 화면 위로 불쑥 올라온 경험 다들 있으시죠?</p>
             <p>바로 그거예요! 예기치 않은 레이아웃 이동을 발생시키는 바로 그것!</p>
-            <Link href={'https://www.zachleat.com/web/mitt-romney-webfont-problem/'} target={'_blank'}>열악한 CLS를 만드는
-                FOIT로 인한 웃픈 썰,,</Link>
+
             <br/>
             <br/>
-            <p>우수한 사용자 경험을 제공하기 위해서 CLS는 <strong>0.1 이하</strong>가 되어야 한다.</p>
+            <Link href={'https://www.zachleat.com/web/mitt-romney-webfont-problem/'} target={'_blank'}>
+            열악한 CLS의 원인이 되는 FOIT(Flash Of Invisible Text)로 인한 슬픈 썰 🥶
+            </Link>
+
+            <br/>
+            <br/>
+            <p style={{paddingTop: '200px'}}>우수한 사용자 경험을 제공하기 위해서 CLS는 <strong>0.1 이하</strong>가 되어야 한다.</p>
             <br/>
             <br/>
             <br/>
@@ -63,6 +69,7 @@ const Definition = () => {
                 <p>구글은 이에 대해 <strong>사용자가 예상하지 않은 경우에만</strong> 좋지 않다고 해석하고 있다.</p>
                 <p>예를 들어 사용자가 링크를 클릭하거나, 버튼을 누르거나, 검색 상자에 입력하는 등 사용자와의 상호작용으로 발생하는 레이아웃 이동은 사용자에게 그 관계가 명확히 보이므로 괜찮다고 본다. </p>
             </Quiz>
+            <NextButton path={'/cls/optimization'}/>
         </Container>
     )
 }

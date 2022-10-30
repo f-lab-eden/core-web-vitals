@@ -21,49 +21,51 @@ const Desc = () => {
                 따라서, 이러한 상대성을 줄이고 정확하고 정량적이며 객관적인 기준에서 성능을 비교할 수 있어야하는데 이러한 객관적인 기준을 ‘메트릭’이라고 한다.</span>
 
             <p>위 세가지 메트릭이 모두 75번째 백분위수인지를 기준으로 권장 목표에 도달했는지 확인한다.</p>
+            <Box/>
+            <Box/>
             <p>
                 코어 웹 바이탈을 측정할 수 있는 도구는 아래와 같다.
             </p>
-            <p><strong>Lighthouse</strong></p>
-            <div>
+            <p className={'center'}><strong>Lighthouse</strong></p>
+            <figure>
                 <Image src={'/images/lighthouse.png'} width={500} height={700} alt={'lighthouse'}/>
-            </div>
+            </figure>
             <br/>
             <br/>
             <br/>
-            <p><strong><Link href={'https://pagespeed.web.dev/'} target={'_blank'}>PageSpeedInsights</Link></strong></p>
-            <div>
+            <p className={'center'}><strong><Link href={'https://pagespeed.web.dev/'} target={'_blank'}>PageSpeedInsights</Link></strong></p>
+            <figure>
                 <Image src={'/images/page-speed-insights.png'} width={1000} height={400} alt={'page-speed-insights'}/>
-            </div>
+            </figure>
             <br/>
             <br/>
             <br/>
-            <p><strong>Chrome DevTools</strong></p>
-            <div>
+            <p className={'center'}><strong>Chrome DevTools</strong></p>
+            <figure>
                 <Image src={'/images/chrome-devtools.png'} width={500} height={700} alt={'dev-tools'}/>
-            </div>
+            </figure>
             <br/>
             <br/>
             <br/>
-            <p><strong>Web Vitals 익스텐션</strong></p>
-            <div>
+            <p className={'center'}><strong>Web Vitals 익스텐션</strong></p>
+            <figure>
                 <Image src={'/images/web-vitals-extension.png'} width={1000} height={400} alt={'web-vitals-extension'}/>
-            </div>
+            </figure>
             <br/>
             <br/>
             <br/>
-            <p><strong><Link
+            <p className={'center'}><strong><Link
                 href={'https://search.google.com/search-console/core-web-vitals?resource_id=sc-domain%3Af-lab.kr&hl=ko'}
                 target={'_blank'}>
                 Search Console
             </Link></strong></p>
-            <div>
+            <figure>
                 <Image src={'/images/search-console.png'} width={1000} height={400} alt={'search-console'}/>
-            </div>
+            </figure>
             <br/>
             <br/>
             <br/>
-            <p><strong><Link href={'https://web.dev/measure/'} target={'_blank'}>web.dev</Link></strong></p>
+            <p className={'center'}><strong><Link href={'https://web.dev/measure/'} target={'_blank'}>web.dev</Link></strong></p>
             <br/>
             <br/>
             <br/>
@@ -102,10 +104,17 @@ const Container = styled.div`
     }
   }
 
+  figure {
+    text-align: center;
+  }
+  
+  >.center {
+    text-align: center;
+  }
 `;
 
 const Box = styled.div`
-  height: 100vh;
+  padding-top: 100px;
 `;
 
 export default Desc;

@@ -16,6 +16,8 @@ const Definition = () => {
             <p>좋은 사용자 경험을 제공하기 위해서 LCP가 <strong>2.5초 이내에 </strong>발생하도록 권장한다.</p>
 
             <hr/>
+            <DividedBox/>
+            <DividedBox/>
 
             <p>브라우저의 로딩 과정은 아래와 같다.</p>
 
@@ -55,6 +57,8 @@ const Definition = () => {
             <hr/>
             <br/>
 
+            <DividedBox/>
+            <DividedBox/>
             <i>왜 가장 큰 콘텐츠의 렌더링 시기를 기준점으로 잡았을까?</i>
             <p>
                 SPA가 널리 쓰이기 전에는 load, DOMContentLoaded 와 같이 웹 페이지가 로딩될때 발생하는 이벤트의 시점으로 성능을 측정하려 했다.
@@ -68,7 +72,8 @@ const Definition = () => {
 
             <hr/>
             <br/>
-
+            <DividedBox/>
+            <DividedBox/>
             <p><strong>LCP 요소로 간주되는 것은 아래와 같다.</strong></p>
             <div>
                 <Image src={'/images/lcp-element.png'} width={1000} height={500} alt={'lcp-elements'}/>
@@ -76,7 +81,8 @@ const Definition = () => {
 
             <hr/>
             <br/>
-
+            <DividedBox/>
+            <DividedBox/>
             <p><strong>요소의 크기는 어떻게 결정될까?</strong></p>
             <p>뷰포트 내에서 보여지는 요소</p>
             <p>기본 크기(intrinsic size)에서 크기가 조정된 이미지의 경우 보여지는 가시적 크기와 기본 크기 중 <strong>더 작은 것</strong>이 보고된다.</p>
@@ -109,5 +115,9 @@ const Container = styled.div`
     font-weight: 600;
     color: #0055D6;
   }
+`;
+
+const DividedBox = styled.div`
+    padding-top: 100px;
 `;
 export default Definition;

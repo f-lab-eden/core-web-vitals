@@ -20,21 +20,23 @@ const Optimization = () => {
                     TBT(Total Blocking Time, 총 차단 시간)은 코어 웹 바이탈에 포함되는 메트릭은 아니지만, 메인 스레드가 입력 응답을 막는 시간을 측정해주기 때문에 이를 개선하면
                     FID를 개선하는 데에 도움을 줄 수 있다.
                 </p>
-
+                <DividedBox/>
+                <DividedBox/>
                 <p><strong>TBT는 어떻게 측정할까?</strong></p>
                 <p>크롬 개발자 도구의 Performance 패널의 하단에 제공된다.</p>
-                <br/>
-                <br/>
+
                 <div>
                     <Image src={'/images/tbt-previously.png'} width={1000} height={700} alt={'tbt'}/>
                 </div>
                 <br/>
                 <br/>
+                <DividedBox/>
                 <p><strong>좋은 TBT 점수는?</strong></p>
                 <p><strong>300ms 미만</strong>이 되어야 한다.</p>
                 <p>TBT를 개선으로 <strong>리소스의 크기를 작게 유지하는 방법</strong>이 소개되어서 따라해보았다.</p>
-
             </DescBox>
+            <DividedBox/>
+            <DividedBox/>
             <DescBox/>
             <DescBox>
                 <p><strong>최적화된 이미지를 제공하자</strong></p>
@@ -45,6 +47,11 @@ const Optimization = () => {
             <DescBox>
                 <p>png 파일로 435KB이던 이미지는 webp로 변환하자 그 크기가 9.4KB밖에 되지 않았다. 두둥...!</p>
             </DescBox>
+            <DividedBox/>
+            <DividedBox/>
+            <DividedBox/>
+            <DividedBox/>
+            <DividedBox/>
             <DescBox>
                 <p><strong>최적화된 비디오를 제공하자</strong></p>
                 <span>위와 같은 맥락으로 비디오 파일은 webm으로 변환해보기로 했다. 기존에는 25MB가 넘는 mp4 파일이 webm으로 변환하자 2.7MB밖에 되지 않았다.
@@ -154,5 +161,9 @@ const Desc = styled.div`
 const ButtonBox = styled.div`
   display: flex;
   align-items: center;
+`;
+
+const DividedBox = styled.div`
+    padding-top: 100px;
 `;
 export default Optimization;
