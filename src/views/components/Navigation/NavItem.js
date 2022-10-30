@@ -25,5 +25,12 @@ const Title = styled.div`
   
   font-size: 28px;
   color: #fff;
+
+  transition: 0.3s;
+  
+  &:hover {
+    color: #b5c7e3;
+    background: #fff;
+  }
 `;
 export default NavItem;
