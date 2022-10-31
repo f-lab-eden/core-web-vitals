@@ -53,7 +53,8 @@ const Definition = () => {
                     <figcaption>이미지 출처: https://hacks.mozilla.org/2017/08/inside-a-super-fast-css-engine-quantum-css-aka-stylo/</figcaption>
                 </figure>
             </div>
-
+            <DividedBox/>
+            <DividedBox/>
             <hr/>
             <br/>
 
@@ -70,6 +71,10 @@ const Definition = () => {
                 성능을 측정하기에 부적절하다고 판단되었다.</p>
             <p>이러한 이유로 뷰포트 내의 가장 큰 요소가 렌더링된 시기를 확인하여 로딩 성능을 측정하고자 했다.</p>
 
+            <figure>
+                <Image src={'/images/react-html.png'} width={700} height={700} alt={'react-html'}/>
+            </figure>
+
             <hr/>
             <br/>
             <DividedBox/>
@@ -78,7 +83,8 @@ const Definition = () => {
             <div>
                 <Image src={'/images/lcp-element.png'} width={1000} height={500} alt={'lcp-elements'}/>
             </div>
-
+            <DividedBox/>
+            <DividedBox/>
             <hr/>
             <br/>
             <DividedBox/>
