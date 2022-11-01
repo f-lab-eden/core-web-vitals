@@ -74,7 +74,8 @@ const Definition = () => {
             <figure>
                 <Image src={'/images/react-html.png'} width={700} height={700} alt={'react-html'}/>
             </figure>
-
+            <DividedBox/>
+            <DividedBox/>
             <hr/>
             <br/>
             <DividedBox/>
@@ -96,6 +97,10 @@ const Definition = () => {
 
             <p><strong>LCP는 언제 보고될까?</strong></p>
             <p>LCP는 브라우저가 첫번째 프레임을 그리는 즉시 PerformanceEntry객체를 통해 최대 콘텐츠 요소를 식별하며, 이후에 최대 콘텐츠풀 요소가 변경될때마다 또 다른 PerformanceEntry 객체가 디스패치된다.</p>
+            <p>
+                PerformanceEntry 객체의 프로퍼티로는 name, entryType, startTime, duration 이 있다.
+                특정 entryType 에 대해 성능 메트릭이 처음으로 시작되는 시기(PerformanceEntry가 생성되는 시기), 성능 이벤트가 지속되는 시기를 파악할 수 있다.
+            </p>
             <p>정확한 분석을 위해 가장 최근에 디스패치된 PerformanceEntry를 사용한다.</p>
 
             <p><strong>LCP 요소의 크기가 변경되면 어떻게 처리될까?</strong></p>
