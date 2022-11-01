@@ -7,7 +7,7 @@ const Optimization = () => {
     return (
         <Container>
             <Quiz>
-                우리 프로덕트의 LCP는 무엇일까요? 예측해보세요! <br/> 정답자에게 상품으로 진심을 담은 박수를 드립니다! <br/> 껄껄
+                우리 프로덕트의 메인 페이지를 처음 진입했을떄 LCP는 무엇일까요? 예측해보세요! <br/> 정답자에게 상품으로 진심을 담은 박수를 드립니다! <br/> 껄껄
             </Quiz>
             <Answer>
                 <Image src={'/images/lcp-in-product.png'} width={1000} height={500} alt={'lcp'}/>
